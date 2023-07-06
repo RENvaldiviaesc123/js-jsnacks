@@ -9,20 +9,25 @@ _Utilizzare la funzione sommaNumeri per stampare il risultato. L'array di N nume
 */
 //Dichiariamo le variabili: In questo caso la quantità dei numeri a inserire, i numeri inseriti e l'aaray dei numeri.
 
-function sommaNumeri(N, arraynumeri) {
-    let arraynumeri = []
-    let N = (parseInt(prompt("Inserire la quantità dei numeri da sommare:")))
+let N = (parseInt(prompt("Inserisci la quantità dei numeri numeri")))
 
-    for (let i = 0; i < N; i++) {
-        
-        let numeriUtente = (parseInt(prompt("Inserisci i numeri")))
-        let sommaUguale  = i + numeriUtente
-        arraynumeri.push(numeriUtente);
-        
-        return arraynumeri
-        console.log(sommaUguale)
+
+function sommaNumeri (N) {
+    let userNumber = (parseInt(prompt("Inserisci i numeri")))
+    for (let i = 0; i < N; i++) {   
+    let arrayNum = []
+    let risultato = i + userNumber
+    arrayNum.push(risultato)
+    return risultato
     }
+    
 }
+ 
+let sommaDeiNumerini = sommaNumeri(N)
+console.log(sommaDeiNumerini)
+
+
+
 
 
 
